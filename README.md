@@ -27,9 +27,9 @@ use tracing_log_error::fields;
 let e = std::io::Error::new(std::io::ErrorKind::Other, "My error");
 event!(
     Level::ERROR,
-    {{ fields::ERROR_MESSAGE }} = fields::error_message(&e),
-    {{ fields::ERROR_DETAILS }} = fields::error_details(&e),
-    {{ fields::ERROR_SOURCE_CHAIN }} = fields::error_source_chain(&e),
+    error.message = fields::error_message(&e),
+    error.details = fields::error_details(&e),
+    error.source_chain = fields::error_source_chain(&e),
     "The connection was dropped"
 );
 ```
