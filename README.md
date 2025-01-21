@@ -9,7 +9,7 @@ in a `tracing` event.
 use tracing_log_error::log_error;
 
 let e = std::io::Error::new(std::io::ErrorKind::Other, "My error");
-tracing_log_error::log_error!(e, "The connection was dropped");
+log_error!(e, "The connection was dropped");
 ```
 
 The `log_error!` invocation captures:
