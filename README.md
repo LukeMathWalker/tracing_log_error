@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> **`tracing_log_error` has moved to [LukeMathWalker/officina](https://github.com/LukeMathWalker/officina/tree/main/tracing_log_error).**
+> This repository is archived: development, issues and releases continue there. The `tracing_log_error` crate on crates.io is unaffected.
+
 <!-- cargo-rdme start -->
 
 # `tracing_log_error`
